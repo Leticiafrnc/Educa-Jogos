@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+h2{
+    font-weight: bold;
+    margin-left: 40px;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}

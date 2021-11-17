@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jogo do S ou SS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo do S ou SS</h1>
+      <h2>Reescreva as palavras e complete com "S" ou "SS" de acordo com o modelo</h2>
+    </header>
+    <main>
+      <section class="container">
+        <div class="palavras">
+          <div class="cores-palavras">
+            <label>Profi__ão : </label>
+            <input type="text" id="respostaProfissao" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirProfissao()"
+            /><br />
+            <div class="resultado" id="resultadoProfissao"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Descan__o: </label>
+            <input type="text" id="respostaDescanso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirDescanso()"
+            /><br />
+            <div class="resultado" id="resultadoDescanso"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Espe__ura: </label>
+            <input type="text" id="respostaEspessura" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirEspessura()"
+            /><br />
+            <div class="resultado" id="resultadoEspessura"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>A__ustado: </label>
+            <input type="text" id="respostaAssustado" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirAssustado()"
+            /><br />
+            <div class="resultado" id="resultadoAssustado"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Au__ência: </label>
+            <input type="text" id="respostaAusencia" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirAusencia()"
+            /><br />
+            <div class="resultado" id="resultadoAusencia"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Fanta__ia: </label>
+            <input type="text" id="respostaFantasia" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirFantasia()"
+            /><br />
+            <div class="resultado" id="resultadoFantasia"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Nece__ário: </label>
+            <input type="text" id="respostaNecessario" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirNecessario()"
+            /><br />
+            <div class="resultado" id="resultadoNecessario"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ri__ada: </label>
+            <input type="text" id="respostaRisada" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirRisada()"
+            /><br />
+            <div class="resultado" id="resultadoRisada"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Progre__o: </label>
+            <input type="text" id="respostaProgresso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirProgresso()"
+            /><br />
+            <div class="resultado" id="resultadoProgresso"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>Sorri__o: </label>
+            <input type="text" id="respostaSorriso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirSorriso()"
+            /><br />
+            <div class="resultado" id="resultadoSorriso"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Can__ado: </label>
+            <input type="text" id="respostaCansado" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCansado()"
+            /><br />
+            <div class="resultado" id="resultadoCansado"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Mi__ão: </label>
+            <input type="text" id="respostaMissao" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirMissao()"
+            /><br />
+            <div class="resultado" id="resultadoMissao"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Indeci__o: </label>
+            <input type="text" id="respostaIndeciso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirIndeciso()"
+            /><br />
+            <div class="resultado" id="resultadoIndeciso"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Suce__o: </label>
+            <input type="text" id="respostaSucesso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirSucesso()"
+            /><br />
+            <div class="resultado" id="resultadoSucesso"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ver__o: </label>
+            <input type="text" id="respostaVerso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirVerso()"
+            /><br />
+            <div class="resultado" id="resultadoVerso"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Depre__ão </label>
+            <input type="text" id="respostaDepressao" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirDepressao()"
+            /><br />
+            <div class="resultado" id="resultadoDepressao"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Pa__agem: </label>
+            <input type="text" id="respostaPassagem" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirPassagem()"
+            /><br />
+            <div class="resultado" id="resultadoPassagem"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Avi__o: </label>
+            <input type="text" id="respostaAviso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirAviso()"
+            /><br />
+            <div class="resultado" id="resultadoAviso"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>O__o </label>
+            <input type="text" id="respostaOsso" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirOsso()"
+            /><br />
+            <div class="resultado" id="resultadoOsso"></div>
+            <br />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Desenvolvido por: Letícia Franco</p>
+        <br />
+        <a href="https://github.com/Leticiafrnc" target="_blank">
+          <i class="icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+          <i class="icon-linkedin"></i>
+        </a>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

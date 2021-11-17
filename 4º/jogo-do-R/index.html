@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jogo do R ou RR</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo do R ou RR</h1>
+      <h2>Reescreva as palavras e complete com "R" ou "RR" de acordo com o modelo</h2>
+    </header>
+    <main>
+      <section class="container">
+        <div class="palavras">
+          <div class="cores-palavras">
+            <label>Ba___aca: </label>
+            <input type="text" id="respostaBarraca" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirBarraca()"
+            /><br />
+            <div class="resultado" id="resultadoBarraca"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Armá__io: </label>
+            <input type="text" id="respostaArmario" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirArmario()"
+            /><br />
+            <div class="resultado" id="resultadoArmario"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Gi__afa: </label>
+            <input type="text" id="respostaGirafa" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGirafa()"
+            /><br />
+            <div class="resultado" id="resultadoGirafa"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ba__alho: </label>
+            <input type="text" id="respostaBaralho" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirBaralho()"
+            /><br />
+            <div class="resultado" id="resultadoBaralho"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ba__ata: </label>
+            <input type="text" id="respostaBarata" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirBarata()"
+            /><br />
+            <div class="resultado" id="resultadoBarata"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Cadei__a: </label>
+            <input type="text" id="respostaCadeira" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCadeira()"
+            /><br />
+            <div class="resultado" id="resultadoCadeira"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Bete__aba: </label>
+            <input type="text" id="respostaBeterraba" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirBeterraba()"
+            /><br />
+            <div class="resultado" id="resultadoBeterraba"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Co__ida: </label>
+            <input type="text" id="respostaCorrida" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCorrida()"
+            /><br />
+            <div class="resultado" id="resultadoCorrida"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ca__o: </label>
+            <input type="text" id="respostaCarro" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCarro()"
+            /><br />
+            <div class="resultado" id="resultadoCarro"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>Se__ote: </label>
+            <input type="text" id="respostaSerrote" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirSerrote()"
+            /><br />
+            <div class="resultado" id="resultadoSerrote"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Can__ado: </label>
+            <input type="text" id="respostaCansado" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCansado()"
+            /><br />
+            <div class="resultado" id="resultadoCansado"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Pê__a: </label>
+            <input type="text" id="respostaPera" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirPera()"
+            /><br />
+            <div class="resultado" id="resultadoPera"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>Mo__ango: </label>
+            <input type="text" id="respostaMorango" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirMorango()"
+            /><br />
+            <div class="resultado" id="resultadoMorango"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Co__uja: </label>
+            <input type="text" id="respostaCoruja" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCoruja()"
+            /><br />
+            <div class="resultado" id="resultadoCoruja"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ba__iga </label>
+            <input type="text" id="respostaBarriga" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirBarriga()"
+            /><br />
+            <div class="resultado" id="resultadoBarriga"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Te__a: </label>
+            <input type="text" id="respostaTerra" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirTerra()"
+            /><br />
+            <div class="resultado" id="resultadoTerra"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Mo__o: </label>
+            <input type="text" id="respostaMorro" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirMorro()"
+            /><br />
+            <div class="resultado" id="resultadoMorro"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Que__ido </label>
+            <input type="text" id="respostaQuerido" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirQuerido()"
+            /><br />
+            <div class="resultado" id="resultadoQuerido"></div>
+            <br />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Desenvolvido por: Letícia Franco</p>
+        <br />
+        <a href="https://github.com/Leticiafrnc" target="_blank">
+          <i class="icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+          <i class="icon-linkedin"></i>
+        </a>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

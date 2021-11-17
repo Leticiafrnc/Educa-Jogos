@@ -1,0 +1,252 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Montserrat';
+}
+
+body{
+	background-color: rgb(255,255,225);
+}
+
+.center{
+	max-width: 1100px;
+	margin:0 auto;
+	padding: 0 2%;
+}
+
+.clear {
+	clear: both;
+}
+
+header{
+	margin-top: 10px;
+}
+
+.logo{
+	float: left;
+}
+.logo a {
+	font-size: 1.5rem;
+	position: absolute;
+	top:30px;
+	left: 100px;
+	text-transform: uppercase;
+}
+.menu{
+	margin-top: 20px;
+	float: right;
+}
+
+.menu a {
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+	margin:0 15px;
+}
+
+.menu a.btn-cta{
+	background-color: #6f006f;
+	color: white;
+	font-size: 16px;
+	padding: 8px 25px;
+}
+.topo{
+	background-color: white;
+	padding: 30px 0;
+}
+.texto-topo a.btn-cta{
+	background-color: #6f006f;
+	color: white;
+	font-size: 16px;
+	padding: 8px 25px;
+}
+.texto-topo{
+	margin-top: 20px;
+	float: left;
+	width: 50%;
+	color: #11223f;
+	padding: 0 20px;
+}
+.texto-topo h2{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.texto-topo p {
+	font-size: 20px;
+}
+.img-topo{
+	float: left;
+	width: 50%;
+}
+.img-topo img{
+	max-width: 100%;
+}
+
+.depoimentos{
+	padding: 30px 0;
+}
+.depoimentos > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+.depoimentos-single{
+	background-color: white;
+	background-image: url('../imagens/quote.png');
+	background-size: 55px 40px;
+	background-position: calc(100% -10px) 10px;
+	background-repeat: no-repeat;
+	padding: 50px;
+	margin-bottom: 10px;
+	width: 45%;
+	margin-right:5%; 
+
+}
+
+.depoimentos-single p {
+	font-weight: bold;
+	color: black;
+	font-size:13px;
+}
+
+.sobre {
+	padding: 20px 0;
+}
+
+.titulo-sobre h2{
+	color: black;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #6f006f;
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.sobre-single{
+	float: left;
+	width: 33.3%;
+	padding: 20px;
+}
+.sobre-conteudo{
+	background-color: white;
+	padding: 30px;
+	color: black;
+}
+
+.titulo-single{
+	display: flex;
+}
+.titulo-single i {
+	background-color: #6f006f;
+	width: 30%;
+	position: relative;
+	padding-top:20px;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+
+}
+.titulo-single h3 {
+	color: white;
+	background-color: #28A4DE;
+	width: 70%;
+	padding: 20px 30px;
+	margin: 0; 
+}
+
+footer{
+	background-color: white;
+	text-align: center;
+	color: white;
+	padding: 30px 0;
+}
+
+footer i {
+	color: #515151;
+	font-size: 18px;
+	margin: 0 15px;
+}
+
+/* catalogo*/
+
+.catalogo {
+
+	max-width: 1100px;
+	margin:0 auto;
+	padding: 0 2%;
+	
+	margin-top: 30px;
+	
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+	
+}
+
+.catalogo-item {
+    flex: 1 1 260px; 
+    border: 1px solid #6f006f;
+    padding: 20px;
+    margin: 10px;
+    min-width: 260px; 
+	
+}
+
+.catalogo-item h2 {
+    font-size: 3em;
+    color: #28A4DE;
+    text-align: center;
+    margin-top: 20px;
+	
+}
+.catalogo-item p {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.catalogo-item a.btn-cta{
+	background-color: #6f006f;
+	color: white;
+	font-size: 16px;
+	padding: 8px 25px;
+	margin-left: 80px;
+	
+	
+}
+
+
+
+@media screen and (max-width: 768px){
+
+	.sobre-single{
+		width: 100%;
+	}
+
+	.depoimentos-single{
+		width: 100%;
+		margin-left: 0; 
+	}
+
+	.texto-topo, .img-topo{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.catalogo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .catalogo .catalogo-item:nth-child(3) {
+        order: -2;
+    }
+
+    .catalogo .catalogo-item:nth-child(2) {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 580px){
+	.menu .btn-cta{
+		display: block;
+		margin-top: 10px;
+	}
+}
