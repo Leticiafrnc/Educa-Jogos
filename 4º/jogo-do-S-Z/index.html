@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jogo do S ou Z</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo do S ou Z</h1>
+      <h2>Reescreva as palavras e complete com "S" ou "Z" de acordo com o modelo</h2>
+    </header>
+    <main>
+      <section class="container">
+        <div class="palavras">
+          <div class="cores-palavras">
+            <label>Fa__enda: </label>
+            <input type="text" id="respostaFazenda" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirFazenda()"
+            /><br />
+            <div class="resultado" id="resultadoFazenda"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ga__olina: </label>
+            <input type="text" id="respostaGasolina" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGasolina()"
+            /><br />
+            <div class="resultado" id="resultadoGasolina"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Hori__onte: </label>
+            <input type="text" id="respostaHorizonte" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirHorizonte()"
+            /><br />
+            <div class="resultado" id="resultadoHorizonte"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Cami__eta: </label>
+            <input type="text" id="respostaCamiseta" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCamiseta()"
+            /><br />
+            <div class="resultado" id="resultadoCamiseta"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Corte__ia: </label>
+            <input type="text" id="respostaCortesia" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCortesia()"
+            /><br />
+            <div class="resultado" id="resultadoCortesia"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>De__enove: </label>
+            <input type="text" id="respostaDezenove" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirDezenove()"
+            /><br />
+            <div class="resultado" id="resultadoDezenove"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Rodi__io: </label>
+            <input type="text" id="respostaRodizio" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirRodizio()"
+            /><br />
+            <div class="resultado" id="resultadoRodizio"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Fanta__ia: </label>
+            <input type="text" id="respostaFantasia" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirFantasia()"
+            /><br />
+            <div class="resultado" id="resultadoFantasia"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Chine__a: </label>
+            <input type="text" id="respostaChinesa" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirChinesa()"
+            /><br />
+            <div class="resultado" id="resultadoChinesa"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>Empre__a: </label>
+            <input type="text" id="respostaEmpresa" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirEmpresa()"
+            /><br />
+            <div class="resultado" id="resultadoEmpresa"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Co__inha: </label>
+            <input type="text" id="respostaCozinha" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCozinha()"
+            /><br />
+            <div class="resultado" id="resultadoCozinha"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Rique__a: </label>
+            <input type="text" id="respostaRiqueza" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirRiqueza()"
+            /><br />
+            <div class="resultado" id="resultadoRiqueza"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>Te__oura: </label>
+            <input type="text" id="respostaTesoura" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirTesoura()"
+            /><br />
+            <div class="resultado" id="resultadoTesoura"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Despre__o: </label>
+            <input type="text" id="respostaDesprezo" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirDesprezo()"
+            /><br />
+            <div class="resultado" id="resultadoDesprezo"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>Ca__eiro </label>
+            <input type="text" id="respostaCaseiro" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCaseiro()"
+            /><br />
+            <div class="resultado" id="resultadoCaseiro"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Pure__a: </label>
+            <input type="text" id="respostaPureza" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirPureza()"
+            /><br />
+            <div class="resultado" id="resultadoPureza"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Defe__a: </label>
+            <input type="text" id="respostaDefesa" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirDefesa()"
+            /><br />
+            <div class="resultado" id="resultadoDefesa"></div>
+            <br />
+          </div>
+
+        </div>
+      </section>
+      <footer>
+        <p>Desenvolvido por: Letícia Franco</p>
+        <br />
+        <a href="https://github.com/Leticiafrnc" target="_blank">
+          <i class="icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+          <i class="icon-linkedin"></i>
+        </a>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
