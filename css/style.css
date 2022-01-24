@@ -216,7 +216,9 @@ footer i {
 
 
 @media screen and (max-width: 768px){
-
+	.menu{
+		display: none;
+	}
 	.sobre-single{
 		width: 100%;
 	}

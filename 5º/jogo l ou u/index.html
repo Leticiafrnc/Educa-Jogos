@@ -13,233 +13,222 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Jogo do R ou RR</title>
+    <title>Jogo do L ou U</title>
   </head>
   <body>
     <header>
-      <h1>Jogo do R ou RR</h1>
-      <h2>Reescreva as palavras e complete com "R" ou "RR" <br> de acordo com o modelo</h2>
+      <h1>Jogo do "L" ou "U"</h1>
+      <h2>Reescreva as palavras e complete com "C" ou "SC" <br> de acordo com o modelo</h2>
     </header>
     <main>
       <section class="container">
         <div class="palavras">
           <div class="cores-palavras">
-            <label>Ba___aca: </label>
-            <input type="text" id="respostaBarraca" />
+            <label>Po_vo: </label>
+            <input type="text" id="respostaPolvo" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirBarraca()"
+              onclick="conferirPolvo()"
             /><br />
-            <div class="resultado" id="resultadoBarraca"></div>
+            <div class="resultado" id="resultadoPolvo"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Armá__io: </label>
-            <input type="text" id="respostaArmario" />
+            <label>Jorna_: </label>
+            <input type="text" id="respostaJornal" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirArmario()"
+              onclick="conferirJornal()"
             /><br />
-            <div class="resultado" id="resultadoArmario"></div>
+            <div class="resultado" id="resultadoJornal"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Gi__afa: </label>
-            <input type="text" id="respostaGirafa" />
+            <label>Minga_: </label>
+            <input type="text" id="respostaMingau" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirGirafa()"
+              onclick="conferirHorizonte()"
             /><br />
-            <div class="resultado" id="resultadoGirafa"></div>
+            <div class="resultado" id="resultadoHorizonte"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Ba__alho: </label>
-            <input type="text" id="respostaBaralho" />
+            <label>Cami__eta: </label>
+            <input type="text" id="respostaCamiseta" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirBaralho()"
+              onclick="conferirCamiseta()"
             /><br />
-            <div class="resultado" id="resultadoBaralho"></div>
+            <div class="resultado" id="resultadoCamiseta"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Ba__ata: </label>
-            <input type="text" id="respostaBarata" />
+            <label>Corte__ia: </label>
+            <input type="text" id="respostaCortesia" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirBarata()"
+              onclick="conferirCortesia()"
             /><br />
-            <div class="resultado" id="resultadoBarata"></div>
+            <div class="resultado" id="resultadoCortesia"></div>
             <br />
             <div class="cores-palavras"></div>
           </div>
 
           <div class="cores-palavras">
-            <label>Cadei__a: </label>
-            <input type="text" id="respostaCadeira" />
+            <label>De__enove: </label>
+            <input type="text" id="respostaDezenove" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirCadeira()"
+              onclick="conferirDezenove()"
             /><br />
-            <div class="resultado" id="resultadoCadeira"></div>
+            <div class="resultado" id="resultadoDezenove"></div>
             <br />
             <div class="cores-palavras"></div>
           </div>
 
           <div class="cores-palavras">
-            <label>Bete__aba: </label>
-            <input type="text" id="respostaBeterraba" />
+            <label>Rodi__io: </label>
+            <input type="text" id="respostaRodizio" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirBeterraba()"
+              onclick="conferirRodizio()"
             /><br />
-            <div class="resultado" id="resultadoBeterraba"></div>
+            <div class="resultado" id="resultadoRodizio"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Co__ida: </label>
-            <input type="text" id="respostaCorrida" />
+            <label>Fanta__ia: </label>
+            <input type="text" id="respostaFantasia" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirCorrida()"
+              onclick="conferirFantasia()"
             /><br />
-            <div class="resultado" id="resultadoCorrida"></div>
+            <div class="resultado" id="resultadoFantasia"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Ca__o: </label>
-            <input type="text" id="respostaCarro" />
+            <label>Chine__a: </label>
+            <input type="text" id="respostaChinesa" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirCarro()"
+              onclick="conferirChinesa()"
             /><br />
-            <div class="resultado" id="resultadoCarro"></div>
+            <div class="resultado" id="resultadoChinesa"></div>
             <br />
           </div>
           <div class="cores-palavras">
-            <label>Se__ote: </label>
-            <input type="text" id="respostaSerrote" />
+            <label>Empre__a: </label>
+            <input type="text" id="respostaEmpresa" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirSerrote()"
+              onclick="conferirEmpresa()"
             /><br />
-            <div class="resultado" id="resultadoSerrote"></div>
-            <br />
-          </div>
-
-          <div class="cores-palavras">
-            <label>Can__ado: </label>
-            <input type="text" id="respostaCansado" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirCansado()"
-            /><br />
-            <div class="resultado" id="resultadoCansado"></div>
+            <div class="resultado" id="resultadoEmpresa"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Pê__a: </label>
-            <input type="text" id="respostaPera" />
+            <label>Co__inha: </label>
+            <input type="text" id="respostaCozinha" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirPera()"
+              onclick="conferirCozinha()"
             /><br />
-            <div class="resultado" id="resultadoPera"></div>
+            <div class="resultado" id="resultadoCozinha"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Rique__a: </label>
+            <input type="text" id="respostaRiqueza" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirRiqueza()"
+            /><br />
+            <div class="resultado" id="resultadoRiqueza"></div>
             <br />
           </div>
           <div class="cores-palavras">
-            <label>Mo__ango: </label>
-            <input type="text" id="respostaMorango" />
+            <label>Te__oura: </label>
+            <input type="text" id="respostaTesoura" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirMorango()"
+              onclick="conferirTesoura()"
             /><br />
-            <div class="resultado" id="resultadoMorango"></div>
+            <div class="resultado" id="resultadoTesoura"></div>
             <br />
             <div class="cores-palavras"></div>
           </div>
 
           <div class="cores-palavras">
-            <label>Co__uja: </label>
-            <input type="text" id="respostaCoruja" />
+            <label>Despre__o: </label>
+            <input type="text" id="respostaDesprezo" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirCoruja()"
+              onclick="conferirDesprezo()"
             /><br />
-            <div class="resultado" id="resultadoCoruja"></div>
+            <div class="resultado" id="resultadoDesprezo"></div>
             <br />
             <div class="cores-palavras"></div>
           </div>
 
           <div class="cores-palavras">
-            <label>Ba__iga </label>
-            <input type="text" id="respostaBarriga" />
+            <label>Ca__eiro </label>
+            <input type="text" id="respostaCaseiro" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirBarriga()"
+              onclick="conferirCaseiro()"
             /><br />
-            <div class="resultado" id="resultadoBarriga"></div>
+            <div class="resultado" id="resultadoCaseiro"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Te__a: </label>
-            <input type="text" id="respostaTerra" />
+            <label>Pure__a: </label>
+            <input type="text" id="respostaPureza" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirTerra()"
+              onclick="conferirPureza()"
             /><br />
-            <div class="resultado" id="resultadoTerra"></div>
+            <div class="resultado" id="resultadoPureza"></div>
             <br />
           </div>
 
           <div class="cores-palavras">
-            <label>Mo__o: </label>
-            <input type="text" id="respostaMorro" />
+            <label>Defe__a: </label>
+            <input type="text" id="respostaDefesa" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirMorro()"
+              onclick="conferirDefesa()"
             /><br />
-            <div class="resultado" id="resultadoMorro"></div>
+            <div class="resultado" id="resultadoDefesa"></div>
             <br />
           </div>
 
-          <div class="cores-palavras">
-            <label>Que__ido </label>
-            <input type="text" id="respostaQuerido" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirQuerido()"
-            /><br />
-            <div class="resultado" id="resultadoQuerido"></div>
-            <br />
-          </div>
         </div>
       </section>
       <footer>

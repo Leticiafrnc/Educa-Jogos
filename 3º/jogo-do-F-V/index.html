@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Jogo do F ou V</title>
+</head>
+
+<body>
+  <header>
+    <h1>Jogo do "F" ou "V"</h1>
+    <h2>Reescreva as palavras e complete com "F" ou "V" <br> de acordo com o modelo</h2>
+  </header>
+  <main>
+    <section class="container">
+      <div class="palavras">
+        <div class="cores-palavras">
+          <label>__IOLA: </label>
+          <input type="text" id="respostaViola" />
+          <input type="button" value="Conferir" onclick="conferirViola()" /><br />
+          <div class="resultado" id="resultadoViola"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>GA__ETA: </label>
+          <input type="text" id="respostaGaveta" />
+          <input type="button" value="Conferir" onclick="conferirGaveta()" /><br />
+          <div class="resultado" id="resultadoGaveta"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>__I__O: </label>
+          <input type="text" id="respostaVivo" />
+          <input type="button" value="Conferir" onclick="conferirVivo()" /><br />
+          <div class="resultado" id="resultadoVivo"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>__AMA: </label>
+          <input type="text" id="respostaFama" />
+          <input type="button" value="Conferir" onclick="conferirFama()" /><br />
+          <div class="resultado" id="resultadoFama"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>__IO: </label> <br>
+          <input type="text" id="respostaFio" />
+          <input type="button" value="Conferir" onclick="conferirFio()" /><br />
+          <div class="resultado" id="resultadoFio"></div>
+          <br />
+          <div class="cores-palavras"></div>
+        </div>
+
+        <div class="cores-palavras">
+          <label>__ARETA: </label>
+          <input type="text" id="respostaVareta" />
+          <input type="button" value="Conferir" onclick="conferirVareta()" /><br />
+          <div class="resultado" id="resultadoVareta"></div>
+          <br />
+          <div class="cores-palavras"></div>
+        </div>
+
+        <div class="cores-palavras">
+          <label>A__IADO: </label>
+          <input type="text" id="respostaAfiado" />
+          <input type="button" value="Conferir" onclick="conferirAfiado()" /><br />
+          <div class="resultado" id="resultadoAfiado"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>CHU__A: </label>
+          <input type="text" id="respostaChuva" />
+          <input type="button" value="Conferir" onclick="conferirChuva()" /><br />
+          <div class="resultado" id="resultadoChuva"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>__INO: </label>
+          <input type="text" id="respostaFino" />
+          <input type="button" value="Conferir" onclick="conferirFino()" /><br />
+          <div class="resultado" id="resultadoFino"></div>
+          <br />
+        </div>
+        <div class="cores-palavras">
+          <label>__ILHA: </label>
+          <input type="text" id="respostaFilha" />
+          <input type="button" value="Conferir" onclick="conferirFilha()" /><br />
+          <div class="resultado" id="resultadoFilha"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>__UMAÇA: </label>
+          <input type="text" id="respostaFumaca" />
+          <input type="button" value="Conferir" onclick="conferirFumaca()" /><br />
+          <div class="resultado" id="resultadoFumaca"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>__ORTE: </label>
+          <input type="text" id="respostaForte" />
+          <input type="button" value="Conferir" onclick="conferirForte()" /><br />
+          <div class="resultado" id="resultadoForte"></div>
+          <br />
+        </div>
+        <div class="cores-palavras">
+          <label>__AFÉ: </label>
+          <input type="text" id="respostaCafe" />
+          <input type="button" value="Conferir" onclick="conferirCafe()" /><br />
+          <div class="resultado" id="resultadoCafe"></div>
+          <br />
+          <div class="cores-palavras"></div>
+        </div>
+
+        <div class="cores-palavras">
+          <label>__EVEREIRO: </label>
+          <input type="text" id="respostaFevereiro" />
+          <input type="button" value="Conferir" onclick="conferirFevereiro()" /><br />
+          <div class="resultado" id="resultadoFevereiro"></div>
+          <br />
+          <div class="cores-palavras"></div>
+        </div>
+
+      </div>
+    </section>
+    <footer>
+      <p>Desenvolvido por: Letícia Franco</p>
+      <br />
+      <a href="https://github.com/Leticiafrnc" target="_blank">
+        <i class="icon-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+        <i class="icon-linkedin"></i>
+      </a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

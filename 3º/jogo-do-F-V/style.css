@@ -48,14 +48,15 @@ input[type="button"] {
   background: #768591;
   color:white;
 }
+.resultado{
+  color: white;
+}
 .cores-palavras {
   margin-top: 2rem;
 }
 footer {
   text-align: center;
   color: white;
-  background: #723B70;
-  margin-top: 20px;
 }
 
 .icon-github,
