@@ -1,195 +1,162 @@
-function conferirFazenda() {
-    var respFazenda = document.querySelector('input#respostaFazenda')
-    var resF = document.querySelector('div#resultadoFazenda')
-    var resultadoF = String(respFazenda.value)
+function conferirPolvo() {
+    const respPolvo = document.querySelector('input#respostaPolvo')
+    const resPolvo = document.querySelector('div#resultadoPolvo')
+    const resultadoPolvo = String(respPolvo.value)
     
-    if (resultadoF === 'Fazenda') {
-        resF.innerHTML = ` Parabéns, está correto!` 
+    if (resultadoPolvo === 'Polvo') {
+        resPolvo.innerHTML = ` Parabéns, está correto!` 
     } else{
-        resF.innerHTML = `Resposta errada, tente outra vez!`
+        resPolvo.innerHTML = `Resposta errada, tente outra vez!`
     }
     } 
 
-    function conferirGasolina() {
-        var respGasolina = document.querySelector('input#respostaGasolina')
-        var resG = document.querySelector('div#resultadoGasolina')
-        var resultadoG = String(respGasolina.value)
+    function conferirJornal() {
+        const respJornal = document.querySelector('input#respostaJornal')
+        const resJornal = document.querySelector('div#resultadoJornal')
+        const resultadoJornal = String(respJornal.value)
 
-        if (resultadoG === `Gasolina`) {
-            resG.innerHTML = `Parabéns, está correto!` 
+        if (resultadoJornal === `Jornal`) {
+            resJornal.innerHTML = `Parabéns, está correto!` 
         } else{
-            resG.innerHTML = `Resposta errada, tente outra vez!`
+            resJornal.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
 
-    function conferirHorizonte() {
-        var respHorizonte = document.querySelector('input#respostaHorizonte')
-        var resH = document.querySelector('div#resultadoHorizonte')
-        var resultadoH = String(respHorizonte.value)
+    function conferirMingau () {
+        const respMingau = document.querySelector('input#respostaMingau')
+        const resMingau = document.querySelector('div#resultadoMingau')
+        const resultadoMingau = String(respMingau.value)
         
-        if (resultadoH === `Horizonte`) {
-            resH.innerHTML = `Parabéns, está correto!` 
+        if (resultadoMingau === `Mingau`) {
+            resMingau.innerHTML = `Parabéns, está correto!` 
         } else{
-            resH.innerHTML = `Resposta errada, tente outra vez!`
+            resMingau.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirCamiseta() {
-        const respCamiseta = document.querySelector('input#respostaCamiseta')
-        const resC = document.querySelector('div#resultadoCamiseta')
-        const resultadoC = String(respCamiseta.value)
+    function conferirAlgodao() {
+        const respAlgodao = document.querySelector('input#respostaAlgodao')
+        const resAlgodao = document.querySelector('div#resultadoAlgodao')
+        const resultadoAlgodao = String(respAlgodao.value)
 
-        if (resultadoC === `Camiseta`) {
-            resC.innerHTML = `Parabéns, está correto!` 
+        if (resultadoAlgodao === `Algodão`) {
+            resAlgodao.innerHTML = `Parabéns, está correto!` 
         } else{
-            resC.innerHTML = `Resposta errada, tente outra vez!`
+            resAlgodao.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirCortesia(){
-        const respCortesia = document.querySelector('input#respostaCortesia')
-        const resCo = document.querySelector('div#resultadoCortesia')
-        const resultadoCo = String(respCortesia.value)
+    function conferirDegrau(){
+        const respDegrau = document.querySelector('input#respostaDegrau')
+        const resDegrau = document.querySelector('div#resultadoDegrau')
+        const resultadoDegrau = String(respDegrau.value)
 
-        if (resultadoCo === `Cortesia`) {
-            resCo.innerHTML = `Parabéns, está correto!` 
+        if (resultadoDegrau === `Degrau`) {
+            resDegrau.innerHTML = `Parabéns, está correto!` 
         } else{
-            resCo.innerHTML = `Resposta errada, tente outra vez!`
+            resDegrau.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirDezenove() {
-        const respDezenove = document.querySelector('input#respostaDezenove')
-        const resD = document.querySelector('div#resultadoDezenove')
-        const resultadoD = String(respDezenove.value)
+    function conferirAlface() {
+        const respAlface = document.querySelector('input#respostaAlface')
+        const resAlface = document.querySelector('div#resultadoAlface')
+        const resultadoAlface = String(respAlface.value)
 
-        if (resultadoD === `Dezenove`) {
-            resD.innerHTML = `Parabéns, está correto!` 
+        if (resultadoAlface === `Alface`) {
+            resAlface.innerHTML = `Parabéns, está correto!` 
         } else{
-            resD.innerHTML = `Resposta errada, tente outra vez!`
+            resAlface.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirRodizio() {
-        const respRodizio = document.querySelector('input#respostaRodizio')
-        const resR = document.querySelector('div#resultadoRodizio')
-        const resultadoR = String(respRodizio.value)
+    function conferirPincel() {
+        const respPincel = document.querySelector('input#respostaPincel')
+        const resPincel = document.querySelector('div#resultadoPincel')
+        const resultadoPincel = String(respPincel.value)
 
-        if (resultadoR === `Rodízio`) {
-            resR.innerHTML = `Parabéns, está correto!` 
+        if (resultadoPincel === `Pincel`) {
+            resPincel.innerHTML = `Parabéns, está correto!` 
         } else{
-            resR.innerHTML = `Resposta errada, tente outra vez!`
+            resPincel.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirFantasia() {
-        const respFantasia = document.querySelector('input#respostaFantasia')
-        const resF = document.querySelector('div#resultadoFantasia')
-        const resultadoF = String(respFantasia.value)
+    function conferirPauta() {
+        const respPauta = document.querySelector('input#respostaPauta')
+        const resPauta = document.querySelector('div#resultadoPauta')
+        const resultadoPauta = String(respPauta.value)
 
-        if (resultadoF === `Fantasia`) {
-            resF.innerHTML = `Parabéns, está correto!` 
+        if (resultadoPauta === `Pauta`) {
+            resPauta.innerHTML = `Parabéns, está correto!` 
         } else{
-            resF.innerHTML = `Resposta errada, tente outra vez!`
+            resPauta.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirChinesa() {
-        const respChinesa = document.querySelector('input#respostaChinesa')
-        const resCh = document.querySelector('div#resultadoChinesa')
-        const resultadoCh = String(respChinesa.value)
+    function conferirGrau() {
+        const respGrau = document.querySelector('input#respostaGrau')
+        const resGrau = document.querySelector('div#resultadoGrau')
+        const resultadoGrau = String(respGrau.value)
 
-        if (resultadoCh === `Chinesa`) {
-            resCh.innerHTML = `Parabéns, está correto!` 
+        if (resultadoGrau === `Grau`) {
+            resGrau.innerHTML = `Parabéns, está correto!` 
         } else{
-            resCh.innerHTML = `Resposta errada, tente outra vez!`
+            resGrau.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirEmpresa() {
-        const respEmpresa = document.querySelector('input#respostaEmpresa')
-        const resE = document.querySelector('div#resultadoEmpresa')
-        const resultadoE = String(respEmpresa.value)
+    function conferirCafezal() {
+        const respCafezal = document.querySelector('input#respostaCafezal')
+        const resCafezal = document.querySelector('div#resultadoCafezal')
+        const resultadoCafezal = String(respCafezal.value)
 
-        if (resultadoE === `Empresa`) {
-            resE.innerHTML = `Parabéns, está correto!` 
+        if (resultadoCafezal === `Cafezal`) {
+            resCafezal.innerHTML = `Parabéns, está correto!` 
         } else{
-            ResizeObserver.innerHTML = `Resposta errada, tente outra vez!`
+            resCafezal.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirCozinha() {
-        const respCozinha = document.querySelector('input#respostaCozinha')
-        const resCo = document.querySelector('div#resultadoCozinha')
-        const resultadoCo = String(respCozinha.value)
+    function conferirPalmito() {
+        const respPalmito = document.querySelector('input#respostaPalmito')
+        const resPalmito = document.querySelector('div#resultadoPalmito')
+        const resultadoPalmito = String(respPalmito.value)
 
-        if (resultadoCo === `Cozinha`) {
-            resCo.innerHTML = `Parabéns, está correto!` 
+        if (resultadoPalmito === `Palmito`) {
+            resPalmito.innerHTML = `Parabéns, está correto!` 
         } else{
-            resCo.innerHTML = `Resposta errada, tente outra vez!`
+            resPalmito.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirRiqueza() {
-        const respRiqueza = document.querySelector('input#respostaRiqueza')
-        const resR = document.querySelector('div#resultadoRiqueza')
-        const resultadoR = String(respRiqueza.value)
+    function conferirChapeu() {
+        const respChapeu = document.querySelector('input#respostaChapeu')
+        const resChapeu = document.querySelector('div#resultadoChapeu')
+        const resultadoChapeu = String(respChapeu.value)
 
-        if (resultadoR === `Riqueza`) {
-            resR.innerHTML = `Parabéns, está correto!` 
+        if (resultadoChapeu === `Chapéu`) {
+            resChapeu.innerHTML = `Parabéns, está correto!` 
         } else{
-            resR.innerHTML = `Resposta errada, tente outra vez!`
+            resChapeu.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
     
-    function conferirTesoura() {
-        const respTesoura = document.querySelector('input#respostaTesoura')
-        const resT = document.querySelector('div#resultadoTesoura')
-        const resultadoT = String(respTesoura.value)
+    function conferirNormal() {
+        const respNormal = document.querySelector('input#respostaNormal')
+        const resNormal = document.querySelector('div#resultadoNormal')
+        const resultadoNormal = String(respNormal.value)
 
-        if (resultadoT === `Tesoura`) {
-            resT.innerHTML = `Parabéns, está correto!` 
+        if (resultadoNormal === `Normal`) {
+            resNormal.innerHTML = `Parabéns, está correto!` 
         } else{
-            resT.innerHTML = `Resposta errada, tente outra vez!`
+            resNormal.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirDesprezo() {
-        const respDesprezo = document.querySelector('input#respostaDesprezo')
-        const resD = document.querySelector('div#resultadoDesprezo')
-        const resultadoD = String(respDesprezo.value)
+    function conferirQuintal() {
+        const respQuintal = document.querySelector('input#respostaQuintal')
+        const resQuintal = document.querySelector('div#resultadoQuintal')
+        const resultadoQuintal = String(respQuintal.value)
 
-        if (resultadoD === `Desprezo`) {
-            resD.innerHTML = `Parabéns, está correto!` 
+        if (resultadoQuintal === `Quintal`) {
+            resQuintal.innerHTML = `Parabéns, está correto!` 
         } else{
-            resD.innerHTML = `Resposta errada, tente outra vez!`
-        }
-    }
-
-    function conferirCaseiro() {
-        const respCaseiro = document.querySelector('input#respostaCaseiro')
-        const resCa = document.querySelector('div#resultadoCaseiro')
-        const resultadoCa = String(respCaseiro.value)
-
-        if (resultadoCa === `Caseiro`) {
-            resCa.innerHTML = `Parabéns, está correto!` 
-        } else{
-            resCa.innerHTML = `Resposta errada, tente outra vez!`
+            resQuintal.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
 
-    function conferirPureza() {
-        var respPureza = document.querySelector('input#respostaPureza')
-        var resP = document.querySelector('div#resultadoPureza')
-        var resultadoP = String(respPureza.value)
-
-        if (resultadoP === `Pureza`) {
-            resP.innerHTML = `Parabéns, está correto!` 
-        } else{
-            resP.innerHTML = `Resposta errada, tente outra vez!`
-        }
-    }
-    function conferirDefesa() {
-        const respDefesa = document.querySelector('input#respostaDefesa')
-        const resD = document.querySelector('div#resultadoDefesa')
-        const resultadoD = String(respDefesa.value)
-
-        if (resultadoD === `Defesa`) {
-            resD.innerHTML = `Parabéns, está correto!` 
-        } else{
-            resD.innerHTML = `Resposta errada, tente outra vez!`
-        }
-    }
+   
     
 
    
