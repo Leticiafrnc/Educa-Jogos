@@ -4,12 +4,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+body{
+  background-color: black;
+}
 header h1,
 h2 {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .container {
