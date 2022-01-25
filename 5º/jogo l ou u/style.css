@@ -31,15 +31,18 @@ h2 {
 
 label {
   text-align: center;
+  font-size: 2rem;
   padding-right: 2rem;
   margin-bottom: 2rem;
   color: white;
 }
 
 input[type="text"] {
-  width: 80%;
+  width: 90%;
   border: 0;
   border-radius: 2px;
+  font-size: 2rem;
+  
 }
 
 input[type="button"] {
@@ -50,6 +53,11 @@ input[type="button"] {
   font-size: 1rem;
   background: #768591;
   color:white;
+  margin-top: 20px;
+}
+.resultado{
+  color: white;
+  font-size: 2rem;
 }
 .cores-palavras {
   margin-top: 2rem;
