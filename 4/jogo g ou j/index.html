@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jogo do "G" ou "J"</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo do "G" ou "J"</h1>
+      <h2>Reescreva as palavras e complete com "G" ou "J" <br> de acordo com o modelo</h2>
+    </header>
+    <main>
+      <section class="container">
+        <div class="palavras">
+          <div class="cores-palavras">
+            <label>Reló_io: </label>
+            <input type="text" id="respostaRelogio" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirRelogio()"
+            /><br />
+            <div class="resultado" id="resultadoRelogio"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Can_ica: </label>
+            <input type="text" id="respostaCanjica" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCanjica()"
+            /><br />
+            <div class="resultado" id="resultadoCanjica"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>_iló: </label>
+            <input type="text" id="respostaJilo" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirJilo()"
+            /><br />
+            <div class="resultado" id="resultadoJilo"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>_inástica: </label>
+            <input type="text" id="respostaGinastica" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGinastica()"
+            /><br />
+            <div class="resultado" id="resultadoGinastica"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>_enial: </label>
+            <input type="text" id="respostaGenial" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGenial()"
+            /><br />
+            <div class="resultado" id="resultadoGenial"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>_ipe: </label>
+            <input type="text" id="respostaJipe" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirJipe()"
+            /><br />
+            <div class="resultado" id="resultadoJipe"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>_eléia: </label>
+            <input type="text" id="respostaGeleia" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGeleia()"
+            /><br />
+            <div class="resultado" id="resultadoGeleia"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>_oaninha: </label>
+            <input type="text" id="respostaJoaninha" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirJoaninha()"
+            /><br />
+            <div class="resultado" id="resultadoJoaninha"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>_elado: </label>
+            <input type="text" id="respostaGelado" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGelado()"
+            /><br />
+            <div class="resultado" id="resultadoGelado"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>_igante: </label>
+            <input type="text" id="respostaGigante" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGigante()"
+            /><br />
+            <div class="resultado" id="resultadoGigante"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Má_ico: </label>
+            <input type="text" id="respostaMagico" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirMagico()"
+            /><br />
+            <div class="resultado" id="resultadoMagico"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Re_ime: </label>
+            <input type="text" id="respostaRegime" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirRegime()"
+            /><br />
+            <div class="resultado" id="resultadoRegime"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>_eito: </label>
+            <input type="text" id="respostaJeito" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirJeito()"
+            /><br />
+            <div class="resultado" id="resultadoJeito"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+          <div class="cores-palavras">
+            <label>_ente: </label>
+            <input type="text" id="respostaGente" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirGente()"
+            /><br />
+            <div class="resultado" id="resultadoGente"></div>
+            <br />
+            <div class="cores-palavras"></div>
+          </div>
+
+
+        </div>
+      </section>
+      <footer>
+        <p>Desenvolvido por: Letícia Franco</p>
+        <br />
+        <a href="https://github.com/Leticiafrnc" target="_blank">
+          <i class="icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+          <i class="icon-linkedin"></i>
+        </a>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

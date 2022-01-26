@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Jogo da Acentuação</title>
+</head>
+
+<body>
+  <header>
+    <h1>Jogo da Acentuação</h1>
+    <h2>Reescreva as palavras com a acentuação correta</h2>
+  </header>
+  <main>
+    <section class="container">
+      <div class="palavras">
+        <div class="cores-palavras">
+          <label>Parana: </label>
+          <input type="text" id="respostaParana" />
+          <input type="button" value="Conferir" onclick="conferirParana()" /><br />
+          <div class="resultado" id="resultadoParana"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Area:</label> <br>
+          <input type="text" id="respostaArea" />
+          <input type="button" value="Conferir" onclick="conferirArea()" /><br />
+          <div class="resultado" id="resultadoArea"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Audio:</label> <br>
+          <input type="text" id="respostaAudio" />
+          <input type="button" value="Conferir" onclick="conferirAudio()" /><br />
+          <div class="resultado" id="resultadoAudio"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Aniversario: </label>
+          <input type="text" id="respostaAniversario" />
+          <input type="button" value="Conferir" onclick="conferirAniversario()" /><br />
+          <div class="resultado" id="resultadoAniversario"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Berçario: </label>
+          <input type="text" id="respostaBercario" />
+          <input type="button" value="Conferir" onclick="conferirBercario()" /><br />
+          <div class="resultado" id="resultadoBercario"></div>
+          <br />
+          <div class="cores-palavras"></div>
+        </div>
+
+        <div class="cores-palavras">
+          <label>Rodoviaria:</label>
+          <input type="text" id="respostaRodoviaria" />
+          <input type="button" value="Conferir" onclick="conferirRodoviaria()" /><br />
+          <div class="resultado" id="resultadoRodoviaria"></div>
+          <br />
+          <div class="cores-palavras"></div>
+        </div>
+
+        <div class="cores-palavras">
+          <label>Improvavel: </label>
+          <input type="text" id="respostaImprovavel" />
+          <input type="button" value="Conferir" onclick="conferirImprovavel()" /><br />
+          <div class="resultado" id="resultadoImprovavel"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Estagiario: </label>
+          <input type="text" id="respostaEstagiario" />
+          <input type="button" value="Conferir" onclick="conferirEstagiario()" /><br />
+          <div class="resultado" id="resultadoEstagiario"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Atras: </label> <br>
+          <input type="text" id="respostaAtras" />
+          <input type="button" value="Conferir" onclick="conferirAtras()" /><br />
+          <div class="resultado" id="resultadoAtras"></div>
+          <br />
+        </div>
+        <div class="cores-palavras">
+          <label>Vocabulario: </label>
+          <input type="text" id="respostaVocabulario" />
+          <input type="button" value="Conferir" onclick="conferirVocabulario()" /><br />
+          <div class="resultado" id="resultadoVocabulario"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Paragrafo: </label>
+          <input type="text" id="respostaParagrafo" />
+          <input type="button" value="Conferir" onclick="conferirParagrafo()" /><br />
+          <div class="resultado" id="resultadoParagrafo"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Pagina: </label> <br>
+          <input type="text" id="respostaPagina" />
+          <input type="button" value="Conferir" onclick="conferirPagina()" /><br />
+          <div class="resultado" id="resultadoPagina"></div>
+          <br />
+        </div>
+        <div class="cores-palavras">
+          <label>Misterio: </label>
+          <input type="text" id="respostaMisterio" />
+          <input type="button" value="Conferir" onclick="conferirMisterio()" /><br />
+          <div class="resultado" id="resultadoMisterio"></div>
+          <br />
+          <div class="cores-palavras"></div>
+        </div>
+
+        <div class="cores-palavras">
+          <label>Trofeu: </label> <br>
+          <input type="text" id="respostaTrfeu" />
+          <input type="button" value="Conferir" onclick="conferirTrofeu()" /><br />
+          <div class="resultado" id="resultadoTrofeu"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Serie: </label><br>
+          <input type="text" id="respostaSerie" />
+          <input type="button" value="Conferir" onclick="conferirSerie()" /><br />
+          <div class="resultado" id="resultadoSerie"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Nenem: </label>
+          <input type="text" id="respostaNenem" />
+          <input type="button" value="Conferir" onclick="conferirNenem()" /><br />
+          <div class="resultado" id="resultadoNenem"></div>
+          <br />
+        </div>
+
+        <div class="cores-palavras">
+          <label>Materia: </label>
+          <input type="text" id="respostaMateria" />
+          <input type="button" value="Conferir" onclick="conferirMateria()" /><br />
+          <div class="resultado" id="resultadoMateria"></div>
+          <br />
+        </div>
+        <div class="cores-palavras">
+          <label>Ferias: </label> <br>
+          <input type="text" id="respostaFerias" />
+          <input type="button" value="Conferir" onclick="conferirFerias()" /><br />
+          <div class="resultado" id="resultadoFerias"></div>
+          <br />
+        </div>
+        <div class="cores-palavras">
+          <label>Tragedia: </label>
+          <input type="text" id="respostaTragedia" />
+          <input type="button" value="Conferir" onclick="conferirTragedia()" /><br />
+          <div class="resultado" id="resultadoTragedia"></div>
+          <br />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Desenvolvido por: Letícia Franco</p>
+      <br />
+      <a href="https://github.com/Leticiafrnc" target="_blank">
+        <i class="icon-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+        <i class="icon-linkedin"></i>
+      </a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
