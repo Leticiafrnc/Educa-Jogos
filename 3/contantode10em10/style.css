@@ -21,32 +21,38 @@ h2 {
   justify-content: center;
   margin-left: 2rem;
 }
-.cores-palavras {
+.cores-numeros {
   width: 90%;
   background: #723B70;
   padding-left: 1rem;
   padding-top: 1rem;
   border-radius: 5px;
 }
-
-label {
-  text-align: center;
-  font-size: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 2rem;
+.cores-numeros p {
   color: white;
+  font-size: 1.5rem;
 }
-
-input[type="text"] {
-  width: 90%;
+.numero10{
+  width: 20%;
   border: 0;
   border-radius: 2px;
   font-size: 2rem;
+  color: white;
+  display: inline;
+  margin-right: 10px;
+  
+}
+input[type="text"] {
+  width: 10%;
+  border: 0;
+  border-radius: 2px;
+  font-size: 2rem;
+  text-align: center;
   
 }
 
 input[type="button"] {
-  width: 30%;
+  width: 20%;
   border: 0;
   border-radius: 3px;
   cursor: pointer;
@@ -54,12 +60,13 @@ input[type="button"] {
   background: #768591;
   color:white;
   margin-top: 20px;
+  
 }
 .resultado{
   color: white;
   font-size: 2rem;
 }
-.cores-palavras {
+.cores-numeros {
   margin-top: 2rem;
 }
 footer {
