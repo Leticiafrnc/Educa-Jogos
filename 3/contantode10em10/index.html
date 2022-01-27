@@ -13,188 +13,39 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Jogo do L ou U</title>
+    <title>Contando de 10 em 10 </title>
   </head>
   <body>
     <header>
-      <h1>Jogo do "L" ou "U"</h1>
-      <h2>Reescreva as palavras e complete com "L" ou "U" <br> de acordo com o modelo</h2>
+      <h1>Contando de 10 em 10</h1>
     </header>
     <main>
       <section class="container">
-        <div class="palavras">
-          <div class="cores-palavras">
-            <label>Po_vo: </label>
-            <input type="text" id="respostaPolvo" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirPolvo()"
-            /><br />
-            <div class="resultado" id="resultadoPolvo"></div>
-            <br />
-          </div>
+        <div class="numeros">
+          <div class="cores-numeros">
+            <p> 1. Coloque a sequência dos números em ordem crescente</p> <br>
+            <div class="numero10">10</div>
+            <div class="numero10">20</div>
+            <div class="numero10">30</div>
+            <input type="text" id="resposta40" />
+            <input type="text" id="resposta50" />
+            <input type="text" id="resposta60" />
+            <input type="text" id="resposta70" />
+            <input type="text" id="resposta80" /><br>
+            
 
-          <div class="cores-palavras">
-            <label>Jorna_: </label>
-            <input type="text" id="respostaJornal" />
             <input
               type="button"
               value="Conferir"
-              onclick="conferirJornal()"
-            /><br />
-            <div class="resultado" id="resultadoJornal"></div>
-            <br />
-          </div>
+              onclick="conferirResposta40();conferirResposta50();conferirResposta60();conferirResposta70();conferirResposta80()"/><br />
 
-          <div class="cores-palavras">
-            <label>Minga_: </label>
-            <input type="text" id="respostaMingau" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirMingau()"
-            /><br />
-            <div class="resultado" id="resultadoMingau"></div>
+            <div class="resultado" id="resultado40"></div>
+            <div class="resultado" id="resultado50"></div>
+            <div class="resultado" id="resultado60"></div>
+            <div class="resultado" id="resultado70"></div>
+            <div class="resultado" id="resultado80"></div>
             <br />
           </div>
-
-          <div class="cores-palavras">
-            <label>A_godão: </label>
-            <input type="text" id="respostaAlgodao" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirAlgodao()"
-            /><br />
-            <div class="resultado" id="resultadoAlgodao"></div>
-            <br />
-          </div>
-
-          <div class="cores-palavras">
-            <label>Degra_: </label>
-            <input type="text" id="respostaDegrau" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirDegrau()"
-            /><br />
-            <div class="resultado" id="resultadoDegrau"></div>
-            <br />
-            <div class="cores-palavras"></div>
-          </div>
-
-          <div class="cores-palavras">
-            <label>A_face: </label>
-            <input type="text" id="respostaAlface" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirAlface()"
-            /><br />
-            <div class="resultado" id="resultadoAlface"></div>
-            <br />
-            <div class="cores-palavras"></div>
-          </div>
-
-          <div class="cores-palavras">
-            <label>Pince_: </label>
-            <input type="text" id="respostaPincel" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirPincel()"
-            /><br />
-            <div class="resultado" id="resultadoPincel"></div>
-            <br />
-          </div>
-
-          <div class="cores-palavras">
-            <label>Pa_ta: </label>
-            <input type="text" id="respostaPauta" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirPauta()"
-            /><br />
-            <div class="resultado" id="resultadoPauta"></div>
-            <br />
-          </div>
-
-          <div class="cores-palavras">
-            <label>Gra_: </label>
-            <input type="text" id="respostaGrau" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirGrau()"
-            /><br />
-            <div class="resultado" id="resultadoGrau"></div>
-            <br />
-          </div>
-          <div class="cores-palavras">
-            <label>Cafeza_: </label>
-            <input type="text" id="respostaCafezal" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirCafezal()"
-            /><br />
-            <div class="resultado" id="resultadoCafezal"></div>
-            <br />
-          </div>
-
-          <div class="cores-palavras">
-            <label>Pa_mito: </label>
-            <input type="text" id="respostaPalmito" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirPalmito()"
-            /><br />
-            <div class="resultado" id="resultadoPalmito"></div>
-            <br />
-          </div>
-
-          <div class="cores-palavras">
-            <label>Chapé_: </label>
-            <input type="text" id="respostaChapeu" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirChapeu()"
-            /><br />
-            <div class="resultado" id="resultadoChapeu"></div>
-            <br />
-          </div>
-          <div class="cores-palavras">
-            <label>Norma_: </label>
-            <input type="text" id="respostaNormal" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirNormal()"
-            /><br />
-            <div class="resultado" id="resultadoNormal"></div>
-            <br />
-            <div class="cores-palavras"></div>
-          </div>
-
-          <div class="cores-palavras">
-            <label>Quinta_: </label>
-            <input type="text" id="respostaQuintal" />
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirQuintal()"
-            /><br />
-            <div class="resultado" id="resultadoQuintal"></div>
-            <br />
-            <div class="cores-palavras"></div>
-          </div>
-
-
-        </div>
       </section>
       <footer>
         <p>Desenvolvido por: Letícia Franco</p>
