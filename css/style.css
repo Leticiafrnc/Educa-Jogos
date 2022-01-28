@@ -223,6 +223,10 @@ footer i {
 		width: 100%;
 	}
 
+	.logo a {
+		margin-top: -10px;
+	}
+
 	.depoimentos-single{
 		width: 100%;
 		margin-left: 0; 
@@ -237,7 +241,7 @@ footer i {
         padding-right: 10px;
     }
 
-    .catalogo .catalogo-item:nth-child(3) {
+    .catalogo .catalogo-item:nth-child(1) {
         order: -2;
     }
 
