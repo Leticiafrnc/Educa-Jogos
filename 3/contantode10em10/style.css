@@ -53,6 +53,7 @@ input[type="text"] {
 
 input[type="button"] {
   width: 20%;
+  height: 30px;
   border: 0;
   border-radius: 3px;
   cursor: pointer;
@@ -73,7 +74,7 @@ footer {
   text-align: center;
   color: white;
   background: #723B70;
-  margin-top: 20px;
+  margin-top: 172px;
 }
 
 .icon-github,
