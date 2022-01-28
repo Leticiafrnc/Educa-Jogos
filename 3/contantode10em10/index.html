@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Contando de 10 em 10 </title>
-  </head>
-  <body>
-    <header>
-      <h1>Contando de 10 em 10</h1>
-    </header>
-    <main>
-      <section class="container">
-        <div class="numeros">
-          <div class="cores-numeros">
-            <p> 1. Coloque a sequência dos números em ordem crescente</p> <br>
-            <div class="numero10">10</div>
-            <div class="numero10">20</div>
-            <div class="numero10">30</div>
-            <input type="text" id="resposta40" />
-            <input type="text" id="resposta50" />
-            <input type="text" id="resposta60" />
-            <input type="text" id="resposta70" />
-            <input type="text" id="resposta80" /><br>
-            
 
-            <input
-              type="button"
-              value="Conferir"
-              onclick="conferirResposta40();conferirResposta50();conferirResposta60();conferirResposta70();conferirResposta80()"/><br />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Contando de 10 em 10 </title>
+</head>
 
-            <div class="resultado" id="resultado40"></div>
-            <div class="resultado" id="resultado50"></div>
-            <div class="resultado" id="resultado60"></div>
-            <div class="resultado" id="resultado70"></div>
-            <div class="resultado" id="resultado80"></div>
-            <br />
-          </div>
-      </section>
-      <footer>
-        <p>Desenvolvido por: Letícia Franco</p>
-        <br />
-        <a href="https://github.com/Leticiafrnc" target="_blank">
-          <i class="icon-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
-          <i class="icon-linkedin"></i>
-        </a>
-      </footer>
-    </main>
+<body>
+  <header>
+    <h1>Contando de 10 em 10</h1>
+    <h2>O objetivo dessa atividade é completar a sequência númerica</h2>
+  </header>
+  <main>
+    <section class="container">
+      <div class="numeros">
+        <div class="cores-numeros">
+          <p> 1. Coloque a sequência dos números em ordem crescente</p> <br>
+          <div class="numero10">10</div>
+          <div class="numero10">20</div>
+          <div class="numero10">30</div>
+          <input type="text" id="resposta40" /> 
+          <input type="text" id="resposta50" />
+          <input type="text" id="resposta60" />
+          <input type="text" id="resposta70" />
+          <input type="text" id="resposta80" />
+          <input type="text" id="resposta90" />
+          <input type="text" id="resposta100" />
+          <input type="text" id="resposta200" />
+          <input style="margin-top: 20px;" type="text" id="resposta300" />
+          <input type="text" id="resposta400" /><br>
 
-    <script src="./script.js"></script>
-  </body>
+
+          <input type="button" value="Conferir" onclick="conferirResposta40();conferirResposta50();
+            conferirResposta60();conferirResposta70();conferirResposta80();conferirResposta90();
+            conferirResposta100();conferirResposta200();conferirResposta300();conferirResposta400();"><br>
+
+          <div class="resultado" id="resultado40"></div>
+          <div class="resultado" id="resultado50"></div>
+          <div class="resultado" id="resultado60"></div>
+          <div class="resultado" id="resultado70"></div>
+          <div class="resultado" id="resultado80"></div>
+          <div class="resultado" id="resultado90"></div>
+          <div class="resultado" id="resultado100"></div>
+          <div class="resultado" id="resultado200"></div>
+          <div class="resultado" id="resultado300"></div>
+          <div class="resultado" id="resultado400"></div>
+          <br />
+        </div>
+    </section>
+    <footer>
+      <p>Desenvolvido por: Letícia Franco</p>
+      <br />
+      <a href="https://github.com/Leticiafrnc" target="_blank">
+        <i class="icon-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+        <i class="icon-linkedin"></i>
+      </a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
