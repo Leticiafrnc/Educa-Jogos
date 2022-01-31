@@ -19,6 +19,16 @@ function conferirBala() {
     document.getElementById("resBala").innerHTML = "Resposta Errada, tente novamente!";
   }
 }
+function conferirMola() {
+  const respMola = document.getElementById("respMola").value;
+  if (respMola === 'M') 
+  {
+    document.getElementById("resMola").innerHTML = "Parabéns! Você acertou";
+  }
+  else {
+    document.getElementById("resMola").innerHTML = "Resposta Errada, tente novamente!";
+  }
+}
 
 function conferirBolo() {
   const respBolo = document.getElementById("respBolo").value;
