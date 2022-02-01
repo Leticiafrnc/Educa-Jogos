@@ -248,6 +248,7 @@ footer i {
     .catalogo .catalogo-item:nth-child(2) {
         order: -1;
     }
+	
 }
 
 @media screen and (max-width: 580px){
@@ -255,4 +256,6 @@ footer i {
 		display: block;
 		margin-top: 10px;
 	}
+
+	
 }
