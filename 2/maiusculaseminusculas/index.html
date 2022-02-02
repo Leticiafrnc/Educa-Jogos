@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
+  <link rel="icon" type="image/jpg" href="./imagens/ruler.png" />
+  <title>Português | 2º ano - Atividade Letras minúsculas </title>
+</head>
+
+<body>
+  <div class="container mx-auto mt-4">
+    <h1 class="mt-3" style="color: white; background: #723B70;"> Coloque as letras minúsculas embaixo da maiúsculas
+      correspondentes. </h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">A</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold">
+
+              <input style="width: 240px; text-align: center; margin-left: -30px; font-size: 3rem;" type="text"
+                id="respostaA">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respA"></p>
+            <input onclick="conferirA()" id="btn-acabate"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">B</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold">
+
+              <input style="width: 240px; text-align: center; margin-left: -30px; font-size: 3rem;" type="text"
+                id="respostaB">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respB"></p>
+            <input onclick="conferirB()" id="btn-acabate"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">C</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaC">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respC"></p>
+            <input onclick="conferirC()" id="btn-cachorro"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">D</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px;" type="text"
+                id="respostaD">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respD"></p>
+            <input onclick="conferirD()" id="btn-gato"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">E</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaE">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respE"></p>
+            <input onclick="conferirE()" id="btn-acabate"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">F</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaF">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respF"></p>
+            <input onclick="conferirF()" id="btn-ovelha"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">G</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaG">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respG"></p>
+            <input onclick="conferirG()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">H</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaH">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respH"></p>
+            <input onclick="conferirH()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">I</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaI">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respI"></p>
+            <input onclick="conferirI()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">J</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaJ">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respJ"></p>
+            <input onclick="conferirJ()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">K</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaK">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respK"></p>
+            <input onclick="conferirK()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">L</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaL">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respL"></p>
+            <input onclick="conferirL()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">M</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaM">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respM"></p>
+            <input onclick="conferirM()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">N</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaN">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respN"></p>
+            <input onclick="conferirN()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">O</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaO">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respO"></p>
+            <input onclick="conferirO()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">P</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaP">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respP"></p>
+            <input onclick="conferirP()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">Q</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaQ">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respQ"></p>
+            <input onclick="conferirQ()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">R</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaR">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respR"></p>
+            <input onclick="conferirR()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">S</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaS">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respS"></p>
+            <input onclick="conferirS()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">T</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaT">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respT"></p>
+            <input onclick="conferirT()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">U</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaU">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respU"></p>
+            <input onclick="conferirU()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">V</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;text-align: center; margin-left: -30px" type="text"
+                id="respostaV">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respV"></p>
+            <input onclick="conferirV()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">W</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaW">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respW"></p>
+            <input onclick="conferirW()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">X</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaX">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respX"></p>
+            <input onclick="conferirX()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">Y</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px;  text-align: center; margin-left: -30px" type="text"
+                id="respostaY">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respY"></p>
+            <input onclick="conferirY()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mt-4" style="width: 18rem;">
+          <h2 style="font-size: 10rem; text-align: center; color: #28A4DE; text-decoration: bold;">Z</h2>
+          <div class="card-body" style="background: #723B70;">
+            <h2 class="card-title font-weight-bold"><input
+                style="width: 240px; text-align: center; margin-left: -30px" type="text"
+                id="respostaZ">
+            </h2>
+            <p style="text-align: center; font-weight: bold; margin-top: 10px; color: white;" id="respZ"></p>
+            <input onclick="conferirZ()" id="btn-polvp"
+              style="font-weight: bold; margin-left: 5rem; background: #28A4DE;" class="btn" type="submit"
+              value="Conferir">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="mt-5" style="background: #723B70;">Por: Letícia Franco </footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>
