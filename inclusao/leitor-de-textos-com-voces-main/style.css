@@ -3,20 +3,20 @@
 }
 
 body {
-  background: #f4fef8;
-  font-family: "Roboto", sans-serif;
+  background:black;
+  font-family:'Montserrat';
   min-height: 100vh;
   margin: 0;
 }
 
 h1 {
   text-align: center;
-  color: #1a2232;
+  color: #28A4DE;
 }
 
 h3 {
   text-align: center;
-  color: #1a2232;
+  color: #28A4DE;
 }
 
 .container {

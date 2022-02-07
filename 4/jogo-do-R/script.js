@@ -110,17 +110,6 @@ function conferirBarraca() {
             resS.innerHTML = `Resposta errada, tente outra vez!`
         }
     }
-    function conferirCansado() {
-        var respCansado = document.querySelector('input#respostaCansado')
-        var resC = document.querySelector('div#resultadoCansado')
-        var resultadoC = String(respCansado.value)
-
-        if (resultadoC === `Cansado`) {
-            resC.innerHTML = `Parabéns, está correto!` 
-        } else{
-            resC.innerHTML = `Resposta errada, tente outra vez!`
-        }
-    }
     function conferirPera() {
         var respPera = document.querySelector('input#respostaPera')
         var resPe = document.querySelector('div#resultadoPera')
