@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Português | Jogo do "T" ou "D"</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo do "T" ou "D"</h1>
+      <h2>Reescreva as palavras e complete com "T" ou "D" <br> de acordo com o modelo</h2>
+    </header>
+    <main>
+      <section class="container">
+        <div class="palavras">
+          <div class="cores-palavras">
+            <label>_elefone: </label>
+            <input type="text" id="respostaTelefone" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirTelefone()"
+            /><br />
+            <div class="resultado" id="resultadoTelefone"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>Almofa_a: </label>
+            <input type="text" id="respostaAlmofada" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirAlmofada()"
+            /><br />
+            <div class="resultado" id="resultadoAlmofada"></div>
+            <br />
+          </div>
+
+          <div class="cores-palavras">
+            <label>_esoura: </label>
+            <input type="text" id="respostaTesoura" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirTesoura()"
+            /><br />
+            <div class="resultado" id="resultadoTesoura"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>Capace_e: </label>
+            <input type="text" id="respostaCapacete" />
+            <input
+              type="button"
+              value="Conferir"
+              onclick="conferirCapacete()"
+            /><br />
+            <div class="resultado" id="resultadoCapacete"></div>
+            <br />
+          </div>
+          <div class="cores-palavras">
+            <label>Escreva uma frase com cada palavra a cima: </label><br>
+            <textarea style="font-size: 1.3rem;" name="" id="" cols="30" rows="5"></textarea>
+       
+          </div>
+
+        </div>
+      </section>
+      <footer>
+        <p>Desenvolvido por: Letícia Franco</p>
+        <br />
+        <a href="https://github.com/Leticiafrnc" target="_blank">
+          <i class="icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/leticiafrnc/" target="_blank">
+          <i class="icon-linkedin"></i>
+        </a>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
