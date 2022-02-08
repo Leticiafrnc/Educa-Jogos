@@ -15,7 +15,7 @@ function conferirArea() {
     const resAr = document.querySelector('div#resultadoArea')
     const resultadoAr = String(respArea.value)
 
-    if (resultadoAr === `Àrea`) {
+    if (resultadoAr === `Área`) {
         resAr.innerHTML = `Parabéns, está correto!`
     } else {
         resAr.innerHTML = `Resposta errada, tente outra vez!`
@@ -27,7 +27,7 @@ function conferirAudio() {
     const resAu = document.querySelector('div#resultadoAudio')
     const resultadoAu = String(respAudio.value)
 
-    if (resultadoAu === `Àudio`) {
+    if (resultadoAu === `Áudio`) {
         resAu.innerHTML = `Parabéns, está correto!`
     } else {
         resAu.innerHTML = `Resposta errada, tente outra vez!`

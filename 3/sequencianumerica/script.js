@@ -1,3 +1,4 @@
+
 function conferirResposta3() {
     const respResposta3 = document.querySelector('input#resposta3')
     const resResposta3 = document.querySelector('div#resultado3')
